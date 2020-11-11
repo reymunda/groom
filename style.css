@@ -1,0 +1,694 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+section {
+	height: 100vh;
+}
+a{
+	text-decoration: none;
+}
+#landingpage{
+	background: linear-gradient(#000000,#1E1818 50%,#000000);
+}
+#landingpage #propil{
+	position: absolute;
+}
+#propil:checked ~ .profiledrop{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 300px;
+	height: 500px;
+	background-color: #1A181E;
+	z-index: 1;
+	opacity: 1;
+	transition: 0.3s;
+}
+#landingpage .profiledrop{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 300px;
+	height: 200px;
+	background-color: #1A181E;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.3s;
+	box-shadow: -10px 10px 30px #000000;
+}
+#landingpage .profiledrop img{
+	left: 110px;
+	width: 90px;
+	position: absolute;
+	top: 100px;
+}
+#landingpage .profiledrop h2{
+	font-family: 'Noto Sans JP';
+	position: absolute;
+	top: 210px;
+	left: 100px;
+	color: #BE1C1C;
+}
+#landingpage .profiledrop p{
+	font-family: 'Noto Sans JP';
+	position: absolute;
+	top: 260px;
+	left: 70px;
+	color: #BE1C1C;
+}
+#landingpage .profiledrop p.join{
+	font-family: 'Noto Sans JP';
+	position: absolute;
+	top: 280px;
+	left: 100px;
+	color: #BE1C1C;
+}
+#landingpage .profiledrop .login{
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+	margin-top: 400px;
+	background-color: #1A181E;
+}
+#landingpage .profiledrop .login .loginbutton{
+	margin-top: 30px;
+	width: 100px;
+	height: 40px;
+	background-color: #BE1C1C;
+	border-radius: 5px;
+
+}
+#landingpage .profiledrop .login .registerbutton{
+	margin-top: 30px;
+	width: 100px;
+	height: 40px;
+	background-color: #BE1C1C;
+		border-radius: 5px;
+
+}
+#landingpage .profiledrop .login p{
+	position: absolute;
+	top: 417px;
+	bottom: 23px;
+	left: 53px;
+	font-family: 'Noto Sans JP';
+	color: white;
+	font-size: 17px;
+}
+#landingpage .profiledrop .login p.regist{
+	position: absolute;
+	bottom: 23px;
+	left: 190px;
+	font-family: 'Noto Sans JP';
+	color: white;
+	font-size: 17px;
+}
+#landingpage .profiledrop .login .loginbutton:active{
+	background-color: #850909;
+}
+#landingpage .profiledrop .login .registerbutton:active{
+	background-color: #850909;
+}
+#landingpage .navbar{
+	position: relative;
+	width: 140px;
+	height: 102.5vh;
+	left: -62px;
+	top: -18px;
+	background: #BE1C1C;
+	transition: 0.2s;
+}
+#landingpage .navbar .home a:active{
+	color: #1A181E;
+	font-weight: bold;
+}
+#landingpage .navbar .shop a:active{
+	color: #1A181E;
+	font-weight: bold;
+}
+#landingpage .navbar .forum a:active{
+	color: #1A181E;
+	font-weight: bold;
+}
+#landingpage .navbar .article a:active{
+	color: #1A181E;
+	font-weight: bold;
+}
+#landingpage .navbar .home img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 68px;
+	left: 77px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#landingpage .navbar .home a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Noto Sans JP';
+	font-size: 25px;
+	position: absolute;
+	top: 65px;
+	left: 115px;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.2s;
+	transform: translate(-140px);
+}
+#landingpage .navbar .shop a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Noto Sans JP';
+	font-size: 25px;
+	position: absolute;
+	top: 210px;
+	left: 115px;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.2s;
+	transform: translate(-140px);
+
+}
+#landingpage .navbar .forum a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Noto Sans JP';
+	font-size: 25px;
+	position: absolute;
+	top: 435px;
+	left: 80px;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.2s;
+	transform: translate(-140px);
+}
+#landingpage .navbar .article a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Noto Sans JP';
+	font-size: 25px;
+	position: absolute;
+	bottom: 9%;
+	left: 115px;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.12s;
+	transform: translate(-140px);
+
+}
+#landingpage .navbar .home .icon_2_home{
+	opacity: 0;
+}
+#landingpage .navbar .home:active .icon_1_home{
+	opacity: 0;
+}
+#landingpage .navbar .home:active .icon_2_home{
+	opacity: 1;
+}
+#landingpage .navbar .shop img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 210px;
+	left: 77px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#landingpage .navbar .shop .icon_2_shop{
+	opacity: 0;
+}
+#landingpage .navbar .shop:active .icon_1_shop{
+	opacity: 0;
+}
+#landingpage .navbar .shop:active .icon_2_shop{
+	opacity: 1;
+}
+#landingpage .navbar .forum img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 435px;
+	left: 77px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#landingpage .navbar .forum .icon_2_forum{
+	opacity: 0;
+}
+#landingpage .navbar .forum:active .icon_1_forum{
+	opacity: 0;
+}
+#landingpage .navbar .forum:active .icon_2_forum{
+	opacity: 1;
+}
+#landingpage .navbar .article img{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	bottom: 9%;
+	left: 77px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#landingpage .navbar .article .icon_2_article{
+	opacity: 0;
+}
+#landingpage .navbar .article:active .icon_1_article{
+	opacity: 0;
+}
+#landingpage .navbar .article:active .icon_2_article{
+	opacity: 1;
+}
+#landingpage .line{
+	position: absolute;
+	width: 198vh;
+	height: 0px;
+	left: -565px;
+	top: 0px;
+	border: 3px solid #BE1C1C;
+	transform: rotate(90deg);
+	transition: 0.2s;
+}
+#landingpage .toggle_detail{
+	position: absolute;
+	width: 73px;
+	height: 73px;
+	left: 55px;
+	top: 290px;
+	background: #1A181E;
+	border-radius: 50%;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#landingpage .toggle_detail:hover{
+	position: absolute;
+	width: 73px;
+	height: 73px;
+	left: 55px;
+	top: 290px;
+	background: #1A181E;
+	border-radius: 50%;
+	transform: scale(1.06);
+}
+#landingpage .toggle_detail:active{
+	position: absolute;
+	width: 73px;
+	height: 73px;
+	left: 55px;
+	top: 290px;
+	background: #1A181E;
+	border-radius: 50%;
+	transform: scale(1);
+}
+
+#landingpage .toggle_detail .circle{
+	position: absolute;
+	width: 55px;
+	height: 55px;
+	left: 9px;
+	top: 9px;
+	border-radius : 50%;
+	background: #1A181E;
+	border: 5px solid #BE1C1C;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+#landingpage .toggle_detail .circle img{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 8px;
+	left: 7px;
+	transition: 0.2s;
+}
+#landingpage .toggle_detail .circle img.close{
+	opacity: 0;
+}
+#landingpage .title{
+	position: absolute;
+	height: 442px;
+	width: 450px;
+	top: 70px;
+	left: 285px;
+}
+#landingpage .title h1{
+	font-family: 'Stalinist One';
+	color: #BE1C1C;
+	font-size: 47px;
+}
+#landingpage .title p.overview{
+	font-family: 'Noto Sans JP';
+	color: white;
+	font-size: 27px;
+	margin-top: -25px;
+}
+#landingpage .title .about_button{
+	width: 170px;
+	height: 55px;
+	background-color: #1F1F1F;
+	border: 4px solid #BE1C1C;
+	transition: 0.2s;
+}
+#landingpage .title .about_button:hover{
+	width: 170px;
+	height: 55px;
+	background-color: #1F1F1F;
+	border: 4px solid #BE1C1C;
+	transform: scale(1.05);
+}
+#landingpage .title .about_button:active{
+	width: 170px;
+	height: 55px;
+	background-color: #1F1F1F;
+	border: 4px solid #BE1C1C;
+	transform: scale(1);
+}
+#landingpage .title .about_button p{
+	font-family: Rubik;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	bottom: 15px;
+	left: 30px;
+}
+#landingpage .picture{
+	position: absolute;
+	width: 559px;
+	height: 565px;
+	left: 790px;
+	top: 70px;
+}
+#landingpage input{
+	opacity: 0;
+}
+#landingpage .picture img{
+	position: absolute;
+	width: 460px;
+	right: -20px;
+	transition: 0.3s;
+}
+#landingpage .picture .overwatch{
+	bottom: 100px;
+	transform: scale(0.8);
+	right: 70px;
+	filter: drop-shadow(5px 5px 10px #BE1C1C);
+	transform: translateX(600px);
+	transition: 0.3s;
+}
+#landingpage .picture .fortnite{
+	right: 75px;
+	top: 20px;
+	filter: drop-shadow(5px 5px 10px #BE1C1C);
+	transform: translateX(600px);
+}
+#landingpage .picture .assasin{
+	right: 75px;
+	top: 20px;
+	transform: translateX(560px);
+}
+.picture .price .gtav .lassasin{
+	transform: translateX(300px);
+	filter: drop-shadow(2px 2px 5px #FFFFFF);
+}
+#landingpage .picture .price .gtav{
+	position: absolute;
+	top: 405px;
+	width: 476px;
+	height: 85px;
+	background: #1F1F1F;
+	border: 4px solid #BE1C1C;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#landingpage .picture .price .gtav .logooverwatch{
+	position: absolute;
+	width: 300px;
+	height: 182px;
+	top: -70px;
+	right: -105px;
+	transform: translateX(300px);
+	filter: drop-shadow(2px 2px 5px #BE1C1C);
+	transition: 0.3s;
+}
+#landingpage .picture .price .gtav .fortnite_logo{
+	transform: translateX(300px);
+}
+
+#landingpage .picture .price .gtav img{
+	position: absolute;
+	width: 180px;
+	height: 182px;
+	top: -50px;
+	right: -55px;
+	transition: 0.3s;
+}
+#landingpage .picture .price .gtav .buy{
+	position: absolute;
+	width: 125px;
+	height: 59px;
+	top: 8px;
+	left: 8px;
+	background: #BE1C1C;
+	border-radius: 5px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#landingpage .picture .price .gtav .buy:hover{
+	position: absolute;
+	width: 125px;
+	height: 59px;
+	top: 8px;
+	left: 8px;
+	background: #BE1C1C;
+	border-radius: 5px;
+	transform: scale(1.05);
+}
+#landingpage .picture .price .gtav .buy:active{
+	position: absolute;
+	width: 125px;
+	height: 59px;
+	top: 8px;
+	left: 8px;
+	background: #BE1C1C;
+	border-radius: 5px;
+	transform: scale(1);
+}
+#landingpage .picture .price .gtav .buy p.buy_button{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	position: absolute;
+	top: -20px;
+	left: 30px;
+	transition: 0.5s;
+}
+#landingpage .picture .price .gtav p.cost{
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 23px;
+	position: absolute;
+	left: 145px;
+	transition: 0.2s;
+}
+#landingpage .picture .price .gtav p.cost2{
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 23px;
+	position: absolute;
+	left: 145px;
+	opacity: 0;
+	transition: 0.2s;
+}
+#landingpage .picture .price .gtav p.cost3{
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 23px;
+	position: absolute;
+	left: 145px;
+	opacity: 0;
+	transition: 0.2s;
+}
+#landingpage .picture .price .gtav p.cost4{
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: normal;
+	color: white;
+	font-size: 23px;
+	position: absolute;
+	left: 145px;
+	opacity: 0;
+	transition: 0.2s;
+}
+#landingpage .picture .switch .switcher{
+	position: absolute;
+	bottom: 10px;
+	width: 13px;
+	height: 13px;
+	border: 2px solid #BE1C1C;
+	box-sizing: border-box;
+	border-radius: 50%;
+	margin-left: 175px;
+	cursor: pointer;
+}
+#landingpage .picture .switch .switcher.b{
+	left: 70px;
+}
+#landingpage .picture .switch .switcher.c{
+	left: 140px;
+}
+#landingpage .picture .switch .switcher.d{
+	left: 210px;
+}
+#landingpage .header{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: 1070px;
+	height: 50px;
+	left: 280px;
+	top: 0px;
+	z-index: 2;
+}
+#landingpage .header p{
+	font-family: Stalinist One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: #BE1C1C;
+	margin-top: 15px;
+}
+#landingpage .header img{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+}
+#landingpage .header .header_icon{
+	margin-top: -10px;
+}
+#landingpage .header .header_icon img{
+	padding: 20px;
+}
+#landingpage #detail{
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+#landingpage #detail{
+	opacity: 0;
+}
+#landingpage #detail:checked ~ .navbar{
+	width: 240px;
+}
+#landingpage #detail:checked ~ .toggle_detail{
+	left: 155px;
+}
+#landingpage #detail:checked ~ .line{
+	left: -465px;
+}
+#landingpage #detail:checked ~ .toggle_detail .circle .more{
+	opacity: 0;
+}
+#landingpage #detail:checked ~ .toggle_detail .circle .close{
+	opacity: 1;
+}
+#landingpage #detail:checked ~ .navbar a{
+	opacity: 1;
+	transform: translate(0px);
+}
+#landingpage #detail:checked ~ .navbar img{
+	opacity: 0;
+}
+#switch1{
+	position: absolute;
+	left: 100px;
+}
+#switch2{
+	position: absolute;
+	left: 200px;
+}
+#switch3{
+	position: absolute;
+	left: 300px;
+}
+#switch4{
+	position: absolute;
+	left: 400px;
+}
+#switch1:checked ~ .picture .switch span.switcher.a{
+	background-color: #BE1C1C;
+}
+#switch2:checked ~ .picture .price .gtav .lassasin{
+	transform: translateX(0);
+}
+#switch2:checked ~ .picture .assasin{
+	transform: translateX(0);
+}
+#switch2:checked ~ .picture .gta5{
+			transform: translateX(500px);
+}
+#switch2:checked ~ .picture .price .gtav p.cost2{
+			opacity: 1;
+}
+#switch2:checked ~ .picture .gtav .cost{
+			opacity: 0;
+}
+#switch2:checked ~ .picture .price .gtav img{
+	transform: translateX(300px);
+}
+#switch2:checked ~ .picture .switch span.switcher.b{
+	background-color: #BE1C1C;
+}
+#switch3:checked ~ .picture .switch span.switcher.c{
+	background-color: #BE1C1C;
+}
+#switch3:checked ~ .picture .price .gtav .logooverwatch{
+	transform: translateX(0);
+}
+#switch3:checked ~ .picture .gta5{
+		transform: translateX(500px);
+}
+#switch3:checked ~ .picture .price .gtav .gta_5{
+	transform: translateX(300px);
+}
+#switch3:checked ~ .picture .overwatch{
+	transform: translateX(0);
+}
+#switch3:checked ~ .picture .gtav .cost{
+			opacity: 0;
+}
+#switch3:checked ~ .picture .price .gtav .cost3{
+			opacity: 1;
+}
+#switch4:checked ~ .picture .switch span.switcher.d{
+	background-color: #BE1C1C;
+}
+#switch4:checked ~ .picture .gta5{
+		transform: translateX(500px);
+}
+#switch4:checked ~ .picture .price .gtav .gta_5{
+	transform: translateX(300px);
+}
+#switch4:checked ~ .picture .gtav .cost{
+			opacity: 0;
+}
+#switch4:checked ~ .picture .fortnite{
+		transform: translateX(0);
+}
+#switch4:checked ~ .picture .price .gtav .fortnite_logo{
+	transform: translateX(0);
+}
+#switch4:checked ~ .picture .price .gtav .cost4{
+			opacity: 1;
+}
